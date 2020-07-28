@@ -54,6 +54,7 @@ typedef struct acc_enviroment {
 	str code_s;
 	str reason;
 	struct hdr_field *to;
+	str to_tag; // sometimes needed if not present yet in a reply
 	str text;
 	time_t ts;
 	struct timeval tv;
